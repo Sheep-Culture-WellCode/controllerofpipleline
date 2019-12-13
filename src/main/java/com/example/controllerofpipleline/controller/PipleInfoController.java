@@ -3,6 +3,8 @@ package com.example.controllerofpipleline.controller;
 import com.example.controllerofpipleline.Bean.Result;
 import com.example.controllerofpipleline.domin.PipleLineInfo;
 import com.example.controllerofpipleline.domin.PiplelineRisk;
+import com.example.controllerofpipleline.enums.ResultEnum;
+import com.example.controllerofpipleline.exception.ResultException;
 import com.example.controllerofpipleline.model.StakeInfo;
 import com.example.controllerofpipleline.service.IPipleService;
 import com.example.controllerofpipleline.service.impl.PipleServiceImpl;
@@ -43,11 +45,15 @@ public class PipleInfoController {
     }
 
 
-//    @ApiOperation("查询管段所有信息")
-//    @PostMapping("SeleOnePipleInfoById")
-//    public Result SeleOnePipleInfoById(){
-
-//    }
+    @ApiOperation("查询一个管段最小单位所有信息")
+    @PostMapping("SeleOnePipleInfoById")
+    public PipleLineInfo SeleOnePipleInfoById(String stakeId){
+        if (stakeId==null){
+            throw new ResultException(ResultEnum.ERROARGUMENT);
+        }
+        int intStakeId = Integer.valueOf(stakeId);
+        return pipleService.SeleOnePipleInfoById(intStakeId);
+    }
 
     @ApiOperation("更新管段")
     @PostMapping("updateAPipleInfo")
