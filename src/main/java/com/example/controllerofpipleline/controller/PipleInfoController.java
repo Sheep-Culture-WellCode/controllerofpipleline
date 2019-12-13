@@ -36,13 +36,13 @@ public class PipleInfoController {
 
 //    @ApiOperation("查询管段所有信息")
 //    @PostMapping("seleAPipleAllInfo")
+////
 //
-//
-//    @ApiOperation("更新管段")
-//    @PostMapping("updateAPipleInfo")
-//    public Result updateAPipleInfo(int startStakeId){
-//        return ResultUtil.success();
-//    }
+    @ApiOperation("更新管段")
+    @PostMapping("updateAPipleInfo")
+    public Result updateAPipleInfo(int startStakeId){
+        return ResultUtil.success();
+    }
 //
 //    @ApiOperation("删除管段")
 
