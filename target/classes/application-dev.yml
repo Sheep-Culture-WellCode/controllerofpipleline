@@ -1,0 +1,26 @@
+server:
+  port: 8080
+spring:
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://112.74.190.137:3306/pipleline?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=CTT&characterEncoding=utf-8&verifyServerCertificate=false&useSSL=false
+      username: root
+      password: ywj990623
+  thymeleaf:
+      mode: HTML
+      cache: false
+      prefix: classpath:/templates
+      suffix: .html
+      encoding: UTF-8
+  mvc:
+      view:
+        prefix: /templates/
+  resources:
+      static-locations: classpath:/META-INF/resources,classpath:/resources/,classpath:/static/
+
+  jackson:
+    date-format: yyyy-MM-dd HH\:mm\:ss
+    time-zone: GMT+8
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.example.controllerofpipleline.domin

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.controllerofpipleline.mapper.PiplelineRiskMapper">
+    <insert id="addRiskForPipleLine" parameterType="com.example.controllerofpipleline.domin.PiplelineRisk">
+        INSERT INTO pipleline_risk (start_stake_id, risk_level, risk_time, distance_stack) VALUES
+        (#{startStackId},#{riskLevel},#{riskTime},#{distanceStack})
+    </insert>
+</mapper>

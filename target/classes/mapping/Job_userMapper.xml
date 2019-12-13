@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.controllerofpipleline.mapper.Job_userMapper">
+    <resultMap id="job_user" type="com.example.controllerofpipleline.domin.Job_user">
+        <result column="id" property="id"/>
+        <result column="password" property="password"/>
+        <result column="permission" property="permission"/>
+        <result column="phone" property="phone"/>
+        <result column="username" property="username"/>
+    </resultMap>
+    <!--通过用户名id查找用户信息 -->
+    <select id="findJob_userByid" resultMap="job_user">
+        SELECT * FROM job_user where id=#{id}
+    </select>
+    <insert id="addJob_user" parameterType="com.example.controllerofpipleline.domin.Job_user">
+        INSERT INTO job_user(id,password,permission,phone,username)
+        VALUES(#{id},#{password},#{permission},#{phone},#{username})
+    </insert>
+    <update id="updateJob_user" parameterType="com.example.controllerofpipleline.domin.Job_user">
+        update job_user set job_user.username=#{username},job_user.password=#{password},job_user.phone=#{phone} where job_user.id=#{id}
+    </update>
+</mapper>
