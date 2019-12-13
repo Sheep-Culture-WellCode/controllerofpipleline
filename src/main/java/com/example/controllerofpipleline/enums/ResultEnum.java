@@ -3,7 +3,8 @@ package com.example.controllerofpipleline.enums;
 public enum ResultEnum {
     NORMOALSUCCESS(600,"成功"),
     NORMOALERROR(601,"失败"),
-    NULLPIPLEIFO(602,"没有此管道的信息")
+    NULLPIPLEIFO(602,"没有此管道的信息"),
+    ERROFSELE(603,"没有桩号信息")
     ;
 
     private Integer code;

@@ -3,6 +3,7 @@ package com.example.controllerofpipleline.controller;
 import com.example.controllerofpipleline.Bean.Result;
 import com.example.controllerofpipleline.domin.PipleLineInfo;
 import com.example.controllerofpipleline.domin.PiplelineRisk;
+import com.example.controllerofpipleline.model.StakeInfo;
 import com.example.controllerofpipleline.service.IPipleService;
 import com.example.controllerofpipleline.service.impl.PipleServiceImpl;
 import com.example.controllerofpipleline.util.ResultUtil;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.text.ParseException;
+import java.util.List;
 
 /**
  * @author WellCode
@@ -34,17 +36,31 @@ public class PipleInfoController {
         return ResultUtil.success();
     }
 
+    @ApiOperation("返回所有桩号经纬度")
+    @PostMapping("seleAllStakeInfo")
+    public List<StakeInfo> seleAllStakeInfo(){
+        return pipleService.seleAllStakeInfo();
+    }
+
+
 //    @ApiOperation("查询管段所有信息")
-//    @PostMapping("seleAPipleAllInfo")
-//
-//
-//    @ApiOperation("更新管段")
-//    @PostMapping("updateAPipleInfo")
-//    public Result updateAPipleInfo(int startStakeId){
-//        return ResultUtil.success();
+//    @PostMapping("SeleOnePipleInfoById")
+//    public Result SeleOnePipleInfoById(){
+
 //    }
-//
-//    @ApiOperation("删除管段")
+
+    @ApiOperation("更新管段")
+    @PostMapping("updateAPipleInfo")
+    public Result updateAPipleInfo(int startStakeId){
+        return ResultUtil.success();
+    }
+
+    @ApiOperation("删除管段")
+    @PostMapping("deletePipleInfo")
+    public Result deletePipleInfo (int startStakeId,int endStakeId){
+        return ResultUtil.success();
+    }
+
 
 
 

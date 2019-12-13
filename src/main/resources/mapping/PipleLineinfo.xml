@@ -27,4 +27,13 @@
         SELECT stake_id,stake_name,x,y,pipleline_name,patrol_id,lay_mode,collect_data,area_level FROM piplelineinfo
         WHERE stake_id = #{id}
     </select>
+    <resultMap type="com.example.controllerofpipleline.model.StakeInfo" id="stakeInfo">
+        <id column="stake_id" property="stakeId" />
+        <result column="stake_name" property="stakeName" />
+        <result column="x" property="x" />
+        <result column="y" property="y" />
+    </resultMap>
+    <select id="seleAllStakeInfo" resultMap="stakeInfo">
+        SELECT stake_id,stake_name,x,y FROM piplelineinfo
+    </select>
 </mapper>

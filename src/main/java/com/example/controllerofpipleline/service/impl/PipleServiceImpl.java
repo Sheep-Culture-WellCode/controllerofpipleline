@@ -7,12 +7,14 @@ import com.example.controllerofpipleline.enums.ResultEnum;
 import com.example.controllerofpipleline.exception.ResultException;
 import com.example.controllerofpipleline.mapper.PiplelineRiskMapper;
 import com.example.controllerofpipleline.mapper.PiplelineinfoMapper;
+import com.example.controllerofpipleline.model.StakeInfo;
 import com.example.controllerofpipleline.service.IPipleService;
 import com.example.controllerofpipleline.util.ResultUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author WellCode
@@ -55,6 +57,15 @@ public class PipleServiceImpl implements IPipleService {
        }else {
            return pipleLineInfo;
        }
+    }
+
+    @Override
+    public List<StakeInfo> seleAllStakeInfo() {
+        List<StakeInfo> stakeInfos = piplelineinfoMapper.seleAllStakeInfo();
+        if (stakeInfos == null){
+            throw new ResultException(ResultEnum.ERROFSELE);
+        }
+        return stakeInfos;
     }
 
 }
