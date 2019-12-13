@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3185d1bc-9fd6-405c-a346-5a4969286c49" name="Default Changelist" comment="">
+    <list default="true" id="b1ecda79-9aad-4974-8397-c8f714208024" name="Default Changelist" comment="谢航第三次测试上传">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controllerofpipleline/controller/PipleInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controllerofpipleline/controller/PipleInfoController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +38,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="GO_FMT" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -47,7 +54,22 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="ControllerofpiplelineApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -57,18 +79,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -88,38 +98,37 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="谢航第三次测试上传" />
+    <option name="LAST_COMMIT_MESSAGE" value="谢航第三次测试上传" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="74" key="#Plugins" timestamp="1576225943836">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="74" key="#Plugins/0.0.1536.824@0.0.1536.824" timestamp="1576225943836" />
-    <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser" timestamp="1576225709168">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1576225709168" />
-    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1576224770046">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1576224770046" />
-    <state x="272" y="57" key="SettingsEditor" timestamp="1576225907471">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="272" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1576225907471" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1576226142724">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1576226142724" />
-    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1576226029320">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1576226029320" />
-    <state x="400" y="214" key="git4idea.merge.GitPullDialog" timestamp="1576226112319">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="400" y="214" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1576226112319" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1576225913509">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1576225913509" />
+    <state x="361" y="74" key="#Plugins" />
+    <state x="361" y="74" key="#Plugins/0.0.1536.824@0.0.1536.824" />
+    <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser" />
+    <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" />
+    <state x="549" y="170" key="FileChooserDialogImpl" />
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" />
+    <state x="272" y="57" key="SettingsEditor" />
+    <state x="272" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" />
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" />
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" />
+    <state x="400" y="214" key="git4idea.merge.GitPullDialog" />
+    <state x="400" y="214" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" />
   </component>
 </project>
