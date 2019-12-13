@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.controllerofpipleline.mapper.PiplelineinfoMapper">
+    <insert id="test" parameterType="com.example.controllerofpipleline.domin.PipleLineInfo">
+        INSERT INTO piplelineinfo (stake_name, x, y,pipleline_name,patrol_id,lay_mode,collect_data,area_level)
+        VALUES (#{stakeName},#{x},#{y},#{piplelineName},#{patrolId},#{layMode},#{collectData},#{areaLevel})
+    </insert>
+    <resultMap type="com.example.controllerofpipleline.domin.PipleLineInfo" id="pipleLineInfo">
+        <id column="stake_id" property="stakeId" />
+        <result column="stake_name" property="stakeName" />
+        <result column="x" property="x" />
+        <result column="y" property="y" />
+        <result column="pipleline_name" property="piplelineName" />
+        <result column="patrol_id" property="patrolId" />
+        <result column="lay_mode" property="layMode" />
+        <result column="collect_data" property="collectData" />
+        <result column="area_level" property="areaLevel" />
+    </resultMap>
+    <select id="SeleAllPipleInfo" resultMap="pipleLineInfo">
+        SELECT stake_id,stake_name,x,y,pipleline_name,patrol_id,lay_mode,collect_data,area_level FROM piplelineinfo
+    </select>
+    <update id="test5" parameterType="com.example.controllerofpipleline.model.CDChangeInMysql">
+        UPDATE piplelineinfo SET
+        x=#{x},y=#{y} where stake_id = #{id}
+    </update>
+    <select id="SeleOnePipleInfoById" resultMap="pipleLineInfo" parameterType="java.lang.Integer">
+        SELECT stake_id,stake_name,x,y,pipleline_name,patrol_id,lay_mode,collect_data,area_level FROM piplelineinfo
+        WHERE stake_id = #{id}
+    </select>
+</mapper>
