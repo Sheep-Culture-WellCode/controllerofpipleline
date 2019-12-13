@@ -43,6 +43,11 @@ public class PipleInfoController {
     public Result updateAPipleInfo(int startStakeId){
         return ResultUtil.success();
     }
+
 //
 //    @ApiOperation("删除管段")
+
+
+
+
 }

@@ -2,81 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3185d1bc-9fd6-405c-a346-5a4969286c49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controllerofpipleline/controller/Job_userController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controllerofpipleline/domin/Job_user.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controllerofpipleline/mapper/Job_userMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controllerofpipleline/service/Job_userService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controllerofpipleline/service/impl/Job_userServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapping/Job_userMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/Bean/Result.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/ControllerofpiplelineApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/controller/Job_userController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/controller/PipleInfoController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/controller/PipleInfoController_test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/controller/ToolController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/domin/Job_user.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/domin/PatrolTeam.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/domin/PipleLineInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/domin/PiplelineRisk.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/domin/PiplelineSection.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/draft/test1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/enums/ResultEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/exception/ResultException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/handle/ExceptionHandle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/mapper/Job_userMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/mapper/PiplelineRiskMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/mapper/PiplelineinfoMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/model/CDChange.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/model/CDChangeInMysql.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/properties/Swagger2Config.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/security/OptionFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/service/IPipleService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/service/Job_userService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/service/impl/Job_userServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/service/impl/PipleServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/service/impl/PipleService_test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/util/CoordinatesChangeUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/controllerofpipleline/util/ResultUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mapping/Job_userMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mapping/PipleLineinfo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mapping/PiplelineRisk.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/controllerofpipleline/ControllerofpiplelineApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllerofpipleline.iml" beforeDir="false" afterPath="$PROJECT_DIR$/controllerofpipleline.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controllerofpipleline/controller/PipleInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controllerofpipleline/controller/PipleInfoController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -107,43 +38,16 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="LombokPluginEnabledInProject" value="true" />
-    <property name="LombokPluginIS_ANNOTATION_PROCESSING_CHECK_Enabled" value="true" />
-    <property name="LombokPluginIS_BUILDER_Enabled" value="true" />
-    <property name="LombokPluginIS_CONSTRUCTOR_Enabled" value="true" />
-    <property name="LombokPluginIS_DELEGATE_Enabled" value="true" />
-    <property name="LombokPluginIS_LOG_Enabled" value="true" />
-    <property name="LombokPluginIS_LOMBOK_VERSION_CHECK_Enabled" value="true" />
-    <property name="LombokPluginIS_MISSING_LOMBOK_CHECK_Enabled" value="true" />
-    <property name="LombokPluginIS_VAL_Enabled" value="true" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/mapping" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.controllerofpipleline.controller" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\zxx\IdeaProjects\controllerofpipleline\src\main\resources\mapping" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
   <component name="RunManager">
     <configuration name="ControllerofpiplelineApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -177,140 +81,45 @@
       <option name="presentableId" value="Default" />
       <updated>1576223348605</updated>
       <workItem from="1576223355282" duration="2583000" />
-      <workItem from="1576225971506" duration="4239000" />
-      <workItem from="1576230248878" duration="325000" />
-      <workItem from="1576230588484" duration="1640000" />
-      <workItem from="1576232249435" duration="49000" />
-      <workItem from="1576232313793" duration="569000" />
-      <workItem from="1576232902250" duration="184000" />
-      <workItem from="1576233101823" duration="1777000" />
-      <workItem from="1576238431246" duration="2259000" />
+      <workItem from="1576225971506" duration="158000" />
     </task>
-    <task id="LOCAL-00001" summary="第二次测试上传">
-      <created>1576226224830</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1576226224830</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="1">
-          <value>
-            <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="roots">
-                    <value>
-                      <list>
-                        <option value="$PROJECT_DIR$" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="OPEN_TABS">
-      <set>
-        <option value="1" />
-      </set>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="第二次测试上传" />
-    <option name="LAST_COMMIT_MESSAGE" value="第二次测试上传" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="386" y="74" key="#Plugins" timestamp="1576230572356">
+    <state x="361" y="74" key="#Plugins" timestamp="1576225943836">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="386" y="74" key="#Plugins/0.0.1536.824@0.0.1536.824" timestamp="1576230572356" />
-    <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser" timestamp="1576231487213">
+    <state x="361" y="74" key="#Plugins/0.0.1536.824@0.0.1536.824" timestamp="1576225943836" />
+    <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser" timestamp="1576225709168">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1576231487213" />
-    <state x="260" y="10" key="CommitChangelistDialog2" timestamp="1576226223468">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="260" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576226223468" />
+    <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1576225709168" />
     <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1576224770046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1576224770046" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1576240454155">
+    <state x="272" y="57" key="SettingsEditor" timestamp="1576225907471">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576240454155" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1576240454155">
+    <state x="272" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1576225907471" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1576226142724">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1576240454155" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1576240454155">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1576226142724" />
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1576226029320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1576240454155" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1576240454155">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1576240454155" />
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1576240454155">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576240454155" />
-    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1576240454155">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1576240454155" />
-    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1576240454155">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1576240454155" />
-    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1576240454155">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1576240454155" />
-    <state x="299" y="70" key="Maven.ArtifactSearchDialog" timestamp="1576233171332">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="299" y="70" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1576233171332" />
-    <state x="272" y="0" key="SettingsEditor" timestamp="1576237517045">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="272" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1576237517045" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1576240715003">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1576240715003" />
-    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1576238432245">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1576238432245" />
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1576226029320" />
     <state x="400" y="214" key="git4idea.merge.GitPullDialog" timestamp="1576226112319">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="400" y="214" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1576226112319" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1576230542831">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1576225913509">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1576230542831" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1576225913509" />
   </component>
 </project>
