@@ -3,6 +3,8 @@ package com.example.controllerofpipleline.controller;
 import com.example.controllerofpipleline.Bean.Result;
 import com.example.controllerofpipleline.domin.PipleLineInfo;
 import com.example.controllerofpipleline.domin.PiplelineRisk;
+import com.example.controllerofpipleline.enums.ResultEnum;
+import com.example.controllerofpipleline.exception.ResultException;
 import com.example.controllerofpipleline.mapper.PiplelineinfoMapper;
 import com.example.controllerofpipleline.service.IPipleService;
 import com.example.controllerofpipleline.service.impl.PipleService_test;
@@ -140,9 +142,13 @@ public class ToolController {
             piplelineRisk.setStartStackId(i);
             piplelineRisk.setRiskLevel(1);
             piplelineRisk.setDistanceStack(20);
-            Result result = pipleService.addRiskForPipleLine(piplelineRisk);
-            if (result.getCode()==601){
-                return ResultUtil.error();
+            try {
+                Result result = pipleService.addRiskForPipleLine(piplelineRisk);
+                if (result.getCode()==601){
+                    return ResultUtil.error();
+                }
+            }catch (Exception e){
+                throw new ResultException(ResultEnum.ERROMYSQL);
             }
         }
         return ResultUtil.success();

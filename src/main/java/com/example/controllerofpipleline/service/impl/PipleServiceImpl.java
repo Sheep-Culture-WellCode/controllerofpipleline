@@ -12,6 +12,8 @@ import com.example.controllerofpipleline.service.IPipleService;
 import com.example.controllerofpipleline.util.ResultUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -28,6 +30,7 @@ public class PipleServiceImpl implements IPipleService {
     @Autowired
     PiplelineinfoMapper piplelineinfoMapper;
 
+    @Transactional
     @Override
     public Result addRiskForPipleLine(PiplelineRisk piplelineRisk) {
         try {
@@ -48,7 +51,7 @@ public class PipleServiceImpl implements IPipleService {
             return ResultUtil.error();
         }
     }
-
+    @Transactional
     @Override
     public PipleLineInfo SeleOnePipleInfoById(int id) {
        PipleLineInfo pipleLineInfo = piplelineinfoMapper.SeleOnePipleInfoById(id);
@@ -58,7 +61,7 @@ public class PipleServiceImpl implements IPipleService {
            return pipleLineInfo;
        }
     }
-
+    @Transactional
     @Override
     public List<StakeInfo> seleAllStakeInfo() {
         List<StakeInfo> stakeInfos = piplelineinfoMapper.seleAllStakeInfo();

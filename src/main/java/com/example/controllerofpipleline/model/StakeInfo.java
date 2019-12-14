@@ -9,4 +9,5 @@ public class StakeInfo {
     private String stakeName;
     private String x;
     private String y;
+    private int riskLevel;
 }

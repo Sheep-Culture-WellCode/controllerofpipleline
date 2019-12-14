@@ -8,6 +8,7 @@ import com.example.controllerofpipleline.model.CDChange;
 import com.example.controllerofpipleline.model.CDChangeInMysql;
 import com.example.controllerofpipleline.service.impl.PipleService_test;
 import com.example.controllerofpipleline.util.CoordinatesChangeUtil;
+import com.example.controllerofpipleline.util.HttpUtil;
 import com.example.controllerofpipleline.util.ResultUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -15,6 +16,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -75,4 +79,14 @@ public class PipleInfoController_test {
         return ResultUtil.success();
     }
 
+    @ApiOperation("调用Api")
+    @PostMapping("ApiTest")
+    public String ApiTest(){
+        MultiValueMap<String, String> params = new LinkedMultiValueMap<>();
+        params.add("address","北京市朝阳区阜通东大街6号");
+        params.add("output","JSON");
+        params.add("key","b32db3386641bd9d50166f6b40bd5f2e");
+        HttpHeaders httpHeaders = new HttpHeaders();
+        return HttpUtil.sendGet("https://restapi.amap.com/v3/geocode/geo","address=北京市朝阳区阜通东大街6号&output=JSON&key=b32db3386641bd9d50166f6b40bd5f2e");
+    }
 }

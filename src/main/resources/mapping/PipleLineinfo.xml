@@ -32,8 +32,9 @@
         <result column="stake_name" property="stakeName" />
         <result column="x" property="x" />
         <result column="y" property="y" />
+        <result column="risk_level" property="riskLevel"/>
     </resultMap>
     <select id="seleAllStakeInfo" resultMap="stakeInfo">
-        SELECT stake_id,stake_name,x,y FROM piplelineinfo
+        SELECT stake_id,stake_name,X,Y,risk_level FROM piplelineinfo INNER JOIN pipleline_risk ON piplelineinfo.stake_id=pipleline_risk.start_stake_id
     </select>
 </mapper>

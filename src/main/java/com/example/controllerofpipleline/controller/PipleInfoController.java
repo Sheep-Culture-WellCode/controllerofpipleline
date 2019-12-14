@@ -31,14 +31,9 @@ import java.util.List;
 public class PipleInfoController {
     @Autowired
     IPipleService pipleService;
-    
-    @ApiOperation("为管道最小单位添加风险等级")
-    @PostMapping("addRiskForPipleLine")
-    public Result addRiskForPipleLine(int startStakeId,int endStakeId){
-        return ResultUtil.success();
-    }
 
-    @ApiOperation("返回所有桩号经纬度")
+
+    @ApiOperation("返回所有桩号经纬度及颜色")
     @PostMapping("seleAllStakeInfo")
     public List<StakeInfo> seleAllStakeInfo(){
         return pipleService.seleAllStakeInfo();
@@ -55,17 +50,17 @@ public class PipleInfoController {
         return pipleService.SeleOnePipleInfoById(intStakeId);
     }
 
-    @ApiOperation("更新管段")
-    @PostMapping("updateAPipleInfo")
-    public Result updateAPipleInfo(int startStakeId){
-        return ResultUtil.success();
-    }
-
-    @ApiOperation("删除管段")
-    @PostMapping("deletePipleInfo")
-    public Result deletePipleInfo (int startStakeId,int endStakeId){
-        return ResultUtil.success();
-    }
+//    @ApiOperation("更新管段")
+//    @PostMapping("updateAPipleInfo")
+//    public R esult updateAPipleInfo(int startStakeId){
+//        return ResultUtil.success();
+//    }
+//
+//    @ApiOperation("删除管段")
+//    @PostMapping("deletePipleInfo")
+//    public Result deletePipleInfo (int startStakeId,int endStakeId){
+//        return ResultUtil.success();
+//    }
 
 
 
