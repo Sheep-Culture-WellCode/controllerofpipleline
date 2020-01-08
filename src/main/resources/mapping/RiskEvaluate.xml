@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.controllerofpipleline.mapper.RiskEvaluateMapper">
+    <resultMap id="Evaluate" type="com.example.controllerofpipleline.model.Evaluate">
+        <id column="module_id" property="moduleId"/>
+        <result column="parent_id" property="parentId"/>
+        <result column="module_name" property="moduleName"/>
+        <result column="module_type" property="moduleType"/>
+        <result column="module_score" property="moduleScore"/>
+        <result column="module_weight" property="moduleWeight"/>
+    </resultMap>
+    
+    <select id="selectModuleList" resultMap="Evaluate" parameterType="java.lang.Integer">
+     SELECT * FROM risk_evaluate WHERE parent_id =#{parentId}
+    </select>
+    
+    <select id="selectOneModule" resultMap="Evaluate" parameterType="java.lang.Integer">
+        SELECT * FROM risk_evaluate WHERE module_id = #{moduleId}
+    </select>
+
+    <delete id="delateOneModule" parameterType="java.lang.Integer">
+        DELETE FROM risk_evaluate WHERE module_id=#{moduleId}
+    </delete>
+
+    <insert id="addOneModule" parameterType="com.example.controllerofpipleline.model.Evaluate">
+        INSERT INTO risk_evaluate (parent_id, module_name, module_type, module_score, module_weight)
+        VALUES (#{parentId},#{moduleName},#{moduleType},#{moduleScore},#{moduleWeight})
+    </insert>
+
+    <update id="changeOneModule" parameterType="com.example.controllerofpipleline.model.ChangeModule">
+        UPDATE risk_evaluate SET
+        module_name=#{moduleName},module_score=#{moduleScore},module_weight=#{moduleWeight}
+        where module_id = #{moduleId}
+    </update>
+</mapper>

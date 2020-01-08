@@ -5,4 +5,13 @@
         INSERT INTO pipleline_risk (start_stake_id, risk_level, risk_time, distance_stack) VALUES
         (#{startStackId},#{riskLevel},#{riskTime},#{distanceStack})
     </insert>
+    
+    <update id="updataPiplelineRisk" parameterType="com.example.controllerofpipleline.model.ChangeRisk">
+        UPDATE pipleline_risk SET
+        risk_level = #{riskLevel}, risk_time=#{riskTime} , distance_stack = #{distanceStake}
+        where
+        start_stake_id = #{startStakeId}
+    </update>
+
+
 </mapper>
