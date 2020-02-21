@@ -7,11 +7,13 @@ spring:
       username: root
       password: ywj990623
   thymeleaf:
-      mode: HTML
+      mode: HTML5
       cache: false
-      prefix: classpath:/templates
+      prefix: classpath:/templates/
       suffix: .html
       encoding: UTF-8
+      check-template-location: true
+      content-type: text/html
   mvc:
       view:
         prefix: /templates/

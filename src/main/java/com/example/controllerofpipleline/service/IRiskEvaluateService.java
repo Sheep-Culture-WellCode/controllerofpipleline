@@ -34,4 +34,5 @@ public interface IRiskEvaluateService {
     Result addOneModule(Evaluate evaluate);
 
     Result changeOneModule(ChangeModule changeModule);
+
 }

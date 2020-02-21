@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.controllerofpipleline.mapper.PatrolTeamMapper">
+    <resultMap id="PatrolTeam" type="com.example.controllerofpipleline.domin.PatrolTeam">
+        <id column="patrol_id" property="patrolId"/>
+        <result column="patrol_name" property="patrolName"/>
+    </resultMap>
+    <select id="seleAllPatrolInfo" resultMap="PatrolTeam">
+      SELECT * FROM patrolteam
+    </select>
+</mapper>

@@ -1,11 +1,13 @@
 package com.example.controllerofpipleline.controller;
 
 import com.example.controllerofpipleline.Bean.Result;
+import com.example.controllerofpipleline.domin.PatrolTeam;
 import com.example.controllerofpipleline.domin.PipleLineInfo;
 import com.example.controllerofpipleline.domin.PiplelineRisk;
 import com.example.controllerofpipleline.domin.PiplelineSection;
 import com.example.controllerofpipleline.enums.ResultEnum;
 import com.example.controllerofpipleline.exception.ResultException;
+import com.example.controllerofpipleline.mapper.PatrolTeamMapper;
 import com.example.controllerofpipleline.model.ChangePipleInfo;
 import com.example.controllerofpipleline.model.ChangeRisk;
 import com.example.controllerofpipleline.model.CompletePipleInfo;
@@ -41,7 +43,8 @@ public class PipleInfoController {
     IPipleService pipleService;
     @Autowired
     IPipleSectionService pipleSectionService;
-
+    @Autowired
+    PatrolTeamMapper patrolTeamMapper;
 
     @Transactional(rollbackFor = Exception.class)
     @ApiOperation("返回所有桩号经纬度及颜色")
@@ -53,12 +56,13 @@ public class PipleInfoController {
     @Transactional
     @ApiOperation("查询一个管道最小单位所有信息")
     @PostMapping("SeleOnePipleInfoById")
-    public CompletePipleInfo SeleOnePipleInfoById(String stakeId){
+    public Result SeleOnePipleInfoById(String stakeId){
         if (stakeId==null){
             throw new ResultException(ResultEnum.ERROARGUMENT);
         }
         int intStakeId = Integer.valueOf(stakeId);
-        return pipleService.SeleOnePipleInfoById(intStakeId);
+        CompletePipleInfo completePipleInfo = pipleService.SeleOnePipleInfoById(intStakeId);
+        return ResultUtil.success(completePipleInfo);
     }
 
     @ApiOperation("改变管道最小单位风险（不支持多选）")
@@ -162,6 +166,12 @@ public class PipleInfoController {
         return pipleService.updataOnePiplelineInfo(changePipleInfo);
     }
 
+    @ApiOperation("返回所有巡线队信息")
+    @PostMapping("seleAllPatrolInfo")
+    public Result seleAllPatrolInfo(){
+        List<PatrolTeam> patrolTeams = patrolTeamMapper.seleAllPatrolInfo();
+        return ResultUtil.success(patrolTeams);
+    }
 //    @ApiOperation("更新管段")
 //    @PostMapping("updateAPipleInfo")
 //    public Result updateAPipleInfo(int startStakeId){

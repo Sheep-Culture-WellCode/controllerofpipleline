@@ -42,9 +42,15 @@ public class RiskEvaluateController {
         return riskEvaluateService.addOneModule(evaluate);
     }
 
-    @ApiOperation("修改一个模块(test)")
+    @ApiOperation("修改一个模块")
     @PostMapping("changeOneModule")
     public Result changeOneModule(ChangeModule changeModule){
         return riskEvaluateService.changeOneModule(changeModule);
+    }
+
+    @ApiOperation("计算风险等级")
+    @PostMapping("countRiskEvaluate")
+    public Result countRiskEvaluate(){
+        return null;
     }
 }

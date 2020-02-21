@@ -34,7 +34,8 @@
         <result column="x" property="x" />
         <result column="y" property="y" />
         <result column="pipleline_name" property="piplelineName" />
-        <result column="patrol_id" property="patrolId" />
+        <result column="patrol_id" property="patrolId"/>
+        <result column="patrol_name" property="patrolName" />
         <result column="lay_mode" property="layMode" />
         <result column="collect_data" property="collectData" />
         <result column="area_level" property="areaLevel" />
@@ -44,10 +45,8 @@
     </resultMap>
 
     <select id="SeleOnePipleInfoById" resultMap="completePipleLineInfo" parameterType="java.lang.Integer">
-        SELECT stake_id,stake_name,X,Y,pipleline_name,patrol_id,lay_mode,collect_data,area_level,risk_level,risk_time,distance_stack
-        FROM piplelineinfo
-        INNER JOIN pipleline_risk
-        ON piplelineinfo.stake_id = pipleline_risk.start_stake_id
+        SELECT stake_id,stake_name,X,Y,pipleline_name,piplelineinfo.`patrol_id`,patrol_name,lay_mode,lay_mode,collect_data,area_level,risk_level,risk_time,distance_stack
+        FROM patrolteam INNER JOIN piplelineinfo ON patrolteam.`patrol_id` = piplelineinfo.`patrol_id` INNER JOIN pipleline_risk ON piplelineinfo.stake_id=pipleline_risk.start_stake_id
         WHERE piplelineinfo.stake_id = #{id}
     </select>
 
@@ -59,14 +58,17 @@
         <result column="risk_level" property="riskLevel"/>
         <result column="pipleline_name" property="piplelineName"/>
         <result column="patrol_id" property="patrolId"/>
+        <result column="patrol_name" property="patrolName"/>
         <result column="lay_mode" property="layMode"/>
         <result column="collect_data" property="collectData"/>
         <result column="area_level" property="areaLevel"/>
+        <result column="risk_time" property="riskTime"/>
+        <result column="distance_stack" property="distanceStack"/>
     </resultMap>
 
     <select id="seleAllStakeInfo" resultMap="stakeInfo">
-        SELECT stake_id,stake_name,X,Y,pipleline_name,patrol_id,lay_mode,lay_mode,collect_data,area_level,risk_level
-        FROM piplelineinfo INNER JOIN pipleline_risk ON piplelineinfo.stake_id=pipleline_risk.start_stake_id
+       SELECT stake_id,stake_name,X,Y,pipleline_name,piplelineinfo.`patrol_id`,patrol_name,lay_mode,lay_mode,collect_data,area_level,risk_level,risk_time,distance_stack
+        FROM patrolteam INNER JOIN piplelineinfo ON patrolteam.`patrol_id` = piplelineinfo.`patrol_id` INNER JOIN pipleline_risk ON piplelineinfo.stake_id=pipleline_risk.start_stake_id
     </select>
 
     <update id="updataOnePiplelineInfo" parameterType="com.example.controllerofpipleline.model.ChangePipleInfo">

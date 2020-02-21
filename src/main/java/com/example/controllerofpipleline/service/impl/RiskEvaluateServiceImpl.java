@@ -22,6 +22,7 @@ public class RiskEvaluateServiceImpl implements IRiskEvaluateService {
         List<Evaluate> evaluateListA = riskEvaluateMapper.selectModuleList(0);
         return getTree(evaluateListA);
     }
+
     @Override
     public List<Evaluate> selectOneModule(int moduleId){
         List<Evaluate> evaluateListA = riskEvaluateMapper.selectOneModule(moduleId);

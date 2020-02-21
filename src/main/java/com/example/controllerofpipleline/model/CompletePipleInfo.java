@@ -13,7 +13,8 @@ public class CompletePipleInfo {
     private String x;
     private String y;
     private String piplelineName;
-    private String patrolId;
+    public String patrolId;
+    private String patrolName;
     private String layMode;
     private String collectData;
     private String areaLevel;

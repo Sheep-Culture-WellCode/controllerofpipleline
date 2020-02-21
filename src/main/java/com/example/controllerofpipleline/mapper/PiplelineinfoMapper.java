@@ -18,7 +18,6 @@ public interface PiplelineinfoMapper {
     int test5(CDChangeInMysql cdChangeInMysql);
     CompletePipleInfo SeleOnePipleInfoById(int id);
     List<StakeInfo> seleAllStakeInfo();
-
     int updataOnePiplelineInfo(ChangePipleInfo changePipleInfo);
 
 
